@@ -1,9 +1,18 @@
+*{
+  margin: 0;
+}
+
+body{  
+  background-color: #282c34;
+}
+
 .App {
   text-align: center;
+  margin: 40px 20px 0px;
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 10vmin;
   pointer-events: none;
 }
 
@@ -13,20 +22,41 @@
   }
 }
 
+@media (min-width: 360px) {
+  .App-name{
+    font-size: 1rem;
+    margin: 5px 0 0 10px;
+  }
+}
+
+
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  min-height: 100px;
+  justify-content: space-between;
   font-size: calc(10px + 2vmin);
   color: white;
+  display: flex;
+
+}
+
+.App-navi{
+  display: flex;
+  font-size: 16px;
+}
+
+.App-navi > li{
+  padding:10px;
+  list-style: none;
 }
 
 .App-link {
   color: #61dafb;
 }
+
+.App-name-logo{
+ display: flex;
+}
+
 
 @keyframes App-logo-spin {
   from {
@@ -36,3 +66,69 @@
     transform: rotate(360deg);
   }
 }
+
+
+
+
+/* Small devices (portrait phones, 360px and up) */
+@media (min-width: 360px) {
+  .App{
+    min-height: 80vh;
+    background-color: beige;
+  }
+
+}
+
+/* Small devices (landscape phones, 544px and up) */
+@media (min-width: 544px) {
+  .App{
+    min-height: 80vh;
+    background-color: beige;
+  }
+
+}
+
+/* Medium devices (tablets, 601px and up) The navbar toggle .Appears at this breakpoint */
+@media (min-width: 601px) {
+  .App{
+    min-height: 80vh;
+    background-color: beige;
+  }
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .App{
+    min-height: 80vh;
+    background-color: beige;
+  }
+}
+
+
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 1024px) {
+  .App{
+    min-height: 80vh;
+    background-color: rgb(0, 26, 255);
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .App{
+    min-height: 80vh;
+    background-color: beige;
+  }
+
+  .header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+
+}
+
+
+
