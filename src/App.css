@@ -119,10 +119,15 @@ body{
 @media (min-width: 1200px) {
   .App{
     min-height: 80vh;
-    background-color: beige;
+    background-color: #fff;
+    padding: 1px 0 0 0;
+    border-radius: 25px;
   }
 
   .header{
+    margin: 10px;
+    background-color: #3e7af3;
+    border-radius: 25px;
     display: flex;
     justify-content: space-between;
     padding: 20px;
