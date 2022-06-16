@@ -12,10 +12,7 @@
 }
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media (min-width: 768px) {
-    .clock-day{
-        color: aquamarine;
-        font-size: 25px;
-    }
+
 }
   /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
@@ -27,17 +24,15 @@
     .clock > *{
         margin: 0;
     }
-
-
-    .clock-day{
-        color: rgb(245, 0, 245);
-        font-size: 35px;
-        
-    }
 }
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
     .clock-day{
         color:rgb(0, 255, 55)
+    }
+
+    .clock>p{
+        font-size: 15px;
+        padding: 0 10px;
     }
 }
