@@ -8,6 +8,7 @@ const Clock = () => {
     useEffect(() => {
            setInterval(() => setDateState(new Date()), 1000);
     }, []);
+
     return (
         <div className="clock">
             <p className="clock-day">

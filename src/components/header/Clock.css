@@ -35,4 +35,10 @@
         font-size: 15px;
         padding: 0 10px;
     }
+
+    .clock{
+        display: flex;
+        justify-content: space-around;
+        margin: 0 0 0 120px;
+    }
 }
