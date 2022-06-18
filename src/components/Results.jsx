@@ -7,7 +7,7 @@ const Results = () => {
 
     return(
         <>
-            <div>
+            <div className="main-title">
                 <h1>Games Yesterday</h1>
             </div>
             <Result />

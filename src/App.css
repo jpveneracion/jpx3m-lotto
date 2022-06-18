@@ -150,6 +150,12 @@ body{
     justify-content: space-between;
   }
 
+    .main-title{
+      display: block;
+      width: 100%;
+      margin: 0 0 10px;
+    }
+
     .result-card{
       width: 570px;
       height: 150px;

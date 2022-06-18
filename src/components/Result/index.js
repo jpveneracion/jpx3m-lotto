@@ -1,13 +1,13 @@
-import { Suspense, lazy, useState} from "react";
+import { Suspense, lazy, /*useState*/} from "react";
 import JackpotGames from './JackpotGames'
 
 const Result = () =>{
     /*let dayToday ="Sunday";*/
-    const [dateState] = useState(new Date());
+    /*const [dateState] = useState(new Date());
 
     let dayToday = dateState.toLocaleDateString('en-US',{
         weekday: 'long',
-    })
+    })*/
 
     let yesterday = new Date();
     yesterday.setDate(yesterday.getDate()-1)
