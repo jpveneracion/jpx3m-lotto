@@ -2,27 +2,14 @@ import { Suspense, lazy, useState} from "react";
 import JackpotGames from './JackpotGames'
 
 const Result = () =>{
-    /*let dayToday ="Sunday";*/
-    const [dateState] = useState(new Date());
+    /*let yesterday ="Sunday";*/
+    const [dateState] = useState(new Date().getDate()-1);
 
-    let dayToday = dateState.toLocaleDateString('en-US',{
+    let yesterday = dateState.toLocaleDateString('en-US',{
         weekday: 'long',
     })
 
-    let yesterday = new Date();
-    yesterday.setDate(yesterday.getDate()-1)
-
-    let displayGames = yesterday.toLocaleDateString('en-US',{
-        weekday: 'long',
-    }) 
-
-    /*let jpx3m = yesterState.toLocaleDateString('en-US',{
-        weekday: 'long',
-    })*/
-    console.log(displayGames)
-
-
-    if (displayGames === 'Monday') {
+    if (yesterday === 'Monday') {
         const Monday = lazy(()=>import('./Monday'));
         return (
             <Suspense fallback={<JackpotGames />}>
@@ -30,7 +17,7 @@ const Result = () =>{
             </Suspense>
         )
     }
-    else if (displayGames === 'Tuesday') {
+    else if (yesterday === 'Tuesday') {
         const Tuesday = lazy(()=>import('./Tuesday'));
         return (
             <Suspense fallback={<JackpotGames />}>
@@ -38,7 +25,7 @@ const Result = () =>{
             </Suspense>
         )
     }
-    else if (displayGames === 'Wednesday') {
+    else if (yesterday === 'Wednesday') {
         const Wednesday = lazy(()=>import('./Wednesday'));
         return (
             <Suspense fallback={<JackpotGames />}>
@@ -46,7 +33,7 @@ const Result = () =>{
             </Suspense>
         )
     }
-    else if (displayGames === 'Thursday') {
+    else if (yesterday === 'Thursday') {
         const Thursday = lazy(()=>import('./Thursday'));
         return (
             <Suspense fallback={<JackpotGames />}>
@@ -54,7 +41,7 @@ const Result = () =>{
             </Suspense>
         )
     }
-    else if (displayGames === 'Friday') {
+    else if (yesterday === 'Friday') {
         const Friday = lazy(()=>import('./Friday'));
         return (
             <Suspense fallback={<JackpotGames />}>
@@ -62,7 +49,7 @@ const Result = () =>{
             </Suspense>
         )
     }
-    else if (displayGames === 'Saturday') {
+    else if (yesterday === 'Saturday') {
         const Saturday = lazy(()=>import('./Saturday'));
         return (
             <Suspense fallback={<JackpotGames />}>
@@ -70,7 +57,7 @@ const Result = () =>{
             </Suspense>
         )
     }
-    else if (displayGames === 'Sunday') {
+    else if (yesterday === 'Sunday') {
         const Sunday = lazy(()=>import('./Sunday'));
         return (
             <Suspense fallback={<JackpotGames />}>

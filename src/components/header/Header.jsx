@@ -9,6 +9,7 @@ const Header = () => {
             <Clock />
             <ul className="App-navi">
                 <li>Home</li>
+                <li>Yesterday</li>
                 <li>All Results</li>
             </ul>
         </div>
