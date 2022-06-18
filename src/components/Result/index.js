@@ -1,18 +1,18 @@
-import { Suspense, lazy, /*useState*/} from "react";
+import { Suspense, lazy, useState} from "react";
 import JackpotGames from './JackpotGames'
 
 const Result = () =>{
     /*let dayToday ="Sunday";*/
-    /*const [dateState] = useState(new Date());
+    const [dateState] = useState(new Date());
 
-    let dayToday = dateState.toLocaleDateString('en-US',{
+    /*let dayToday = dateState.toLocaleDateString('en-US',{
         weekday: 'long',
     })*/
 
     let yesterday = new Date();
     yesterday.setDate(yesterday.getDate()-1)
 
-    let displayGames = yesterday.toLocaleDateString('en-US',{
+    let displayGames = dateState.toLocaleDateString('en-US',{
         weekday: 'long',
     }) 
 
@@ -25,57 +25,92 @@ const Result = () =>{
     if (displayGames === 'Monday') {
         const Monday = lazy(()=>import('./Monday'));
         return (
-            <Suspense fallback={<JackpotGames />}>
-                <Monday />
-            </Suspense>
+            <>                
+                <div className="main-title">
+                    <h1>Games Today</h1>
+                </div>
+                <Suspense fallback={<JackpotGames />}>
+                    <Monday />
+                </Suspense>
+            </>
         )
     }
     else if (displayGames === 'Tuesday') {
         const Tuesday = lazy(()=>import('./Tuesday'));
         return (
-            <Suspense fallback={<JackpotGames />}>
-                <Tuesday />
-            </Suspense>
+            <>                
+                <div className="main-title">
+                    <h1>Games Today</h1>
+                </div>
+                <Suspense fallback={<JackpotGames />}>
+                    <Tuesday />
+                </Suspense>
+            </>
         )
     }
     else if (displayGames === 'Wednesday') {
         const Wednesday = lazy(()=>import('./Wednesday'));
         return (
-            <Suspense fallback={<JackpotGames />}>
-                <Wednesday />
-            </Suspense>
+            <>                
+                <div className="main-title">
+                    <h1>Games Today</h1>
+                </div>
+                <Suspense fallback={<JackpotGames />}>
+                    <Wednesday />
+                </Suspense>
+            </>
         )
     }
     else if (displayGames === 'Thursday') {
         const Thursday = lazy(()=>import('./Thursday'));
         return (
-            <Suspense fallback={<JackpotGames />}>
-                <Thursday />
-            </Suspense>
+            <>                
+                <div className="main-title">
+                    <h1>Games Today</h1>
+                </div>
+                <Suspense fallback={<JackpotGames />}>
+                    <Thursday />
+                </Suspense>
+            </>
         )
     }
     else if (displayGames === 'Friday') {
         const Friday = lazy(()=>import('./Friday'));
         return (
-            <Suspense fallback={<JackpotGames />}>
-                <Friday />
-            </Suspense>
+            <>                
+                <div className="main-title">
+                    <h1>Games Today</h1>
+                </div>
+                <Suspense fallback={<JackpotGames />}>
+                    <Friday />
+                </Suspense>
+            </>
         )
     }
     else if (displayGames === 'Saturday') {
         const Saturday = lazy(()=>import('./Saturday'));
         return (
-            <Suspense fallback={<JackpotGames />}>
-                <Saturday />
-            </Suspense>
+            <>                
+                <div className="main-title">
+                    <h1>Games Today</h1>
+                </div>
+                <Suspense fallback={<JackpotGames />}>
+                    <Saturday />
+                </Suspense>
+            </>
         )
     }
     else if (displayGames === 'Sunday') {
         const Sunday = lazy(()=>import('./Sunday'));
         return (
-            <Suspense fallback={<JackpotGames />}>
-                <Sunday />
-            </Suspense>
+            <>                
+                <div className="main-title">
+                    <h1>Games Today</h1>
+                </div>
+                <Suspense fallback={<JackpotGames />}>
+                    <Sunday />
+                </Suspense>
+            </>
         )
     }
     else{

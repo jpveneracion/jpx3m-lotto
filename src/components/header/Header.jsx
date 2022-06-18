@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from '../../images/header.png';
 import Clock from './Clock';
+import {Link} from 'react-router-dom'
 const Header = () => {
 
     return(
@@ -8,8 +9,8 @@ const Header = () => {
             <img src={logo} className="App-logo" alt="logo" />
             <Clock />
             <ul className="App-navi">
-                <li>Home</li>
-                <li>Yesterday</li>
+                <Link to="/">Home</Link> 
+                <Link to="/yesterday">Yesterday</Link>
                 <li>All Results</li>
             </ul>
         </div>

@@ -1,4 +1,6 @@
 import Result from "./Result"
+import { Routes, Route} from "react-router-dom";
+import Yesterday from "./Result/Yesterday"
 
 
 
@@ -7,10 +9,10 @@ const Results = () => {
 
     return(
         <>
-            <div className="main-title">
-                <h1>Games Yesterday</h1>
-            </div>
-            <Result />
+            <Routes>
+                <Route path="/" element={<Result />} />
+                <Route path="yesterday" element={<Yesterday />} />
+            </Routes>
         </>
     )
 }

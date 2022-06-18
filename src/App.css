@@ -49,6 +49,13 @@ body{
   list-style: none;
 }
 
+.App-navi > a{
+  padding:10px;
+  list-style: none;
+  text-decoration: none;
+
+}
+
 .App-link {
   color: #61dafb;
 }
