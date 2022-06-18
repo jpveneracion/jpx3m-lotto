@@ -13,9 +13,10 @@ const Friday = () =>{
                 <img src={FiftyEight} alt='lotto game six fifty eight'/>
             </div>
             <div className='result-details'>
-                <div>Game</div>
                 <div>Date</div>
-                <div>Results</div>
+                <div>Result</div>
+                <div>Jackpot</div>
+                <div>Winner</div>
             </div>
         </div>
         <div className="result-card">
@@ -23,9 +24,10 @@ const Friday = () =>{
                 <img src={FortyFive} alt='lotto game six forty five'/>
             </div>
             <div className='result-details'>
-                <div>Game</div>
                 <div>Date</div>
-                <div>Results</div>
+                <div>Result</div>
+                <div>Jackpot</div>
+                <div>Winner</div>
             </div>
         </div>
         <div className="result-card">
@@ -33,9 +35,8 @@ const Friday = () =>{
                 <img src={FourD} alt='lotto game four digit'/>
             </div>
             <div className='result-details'>
-                <div>Game</div>
                 <div>Date</div>
-                <div>Results</div>
+                <div>Result</div>
             </div>
         </div>
         <div className="result-card">
@@ -43,7 +44,6 @@ const Friday = () =>{
                 <img src={ThreeD} alt='lotto game three digit'/>
             </div>
             <div className='result-details'>
-                <div>Game</div>
                 <div>Date</div>
                 <div>Results</div>
             </div>
@@ -53,7 +53,6 @@ const Friday = () =>{
                 <img src={TwoD} alt='lotto game two digit'/>
             </div>
             <div className='result-details'>
-                <div>Game</div>
                 <div>Date</div>
                 <div>Results</div>
             </div>
